@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <script src='https://code.jquery.com/jquery-2.2.4.js'></script>
+    <script src="https://kit.fontawesome.com/92d70a2fd8.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="main">
+        <div class="header">
+            <p class="logo">Gaming Shop</p>
+            <input type="text" placeholder="search" id="input">
+            <div>
+                <input type="text" id="input" placeholder="Enter Game title">
+                <button id="id1" onclick="searchGame()">Search</button>
+            </div>
+            <i style='font-size:24px' class='fas'>&#xf07a;</i>
+    </div>
+    <video src="images/EA_SPORTS_FC_24_Official_Gameplay_Trailer.mp4" autoplay loop muted></video>
+        <div class="container">
+            <div id="imgeCard" class="product">
+                <img id='img' src="images/call-of-duty-modern-warfare-2-button-02-1653417394041.jpg" alt="Product 1">
+                <h2>Call of Duty</h2>
+                <p>Price: 80DT</p>
+                <button class="btn" onclick="addToCart('Call of Duty', 80)">Add to Cart</button>
+        </div>
+            <div  id="id1"  class="product">
+                <img id='imgeCard' src="images/11307uYG0CXzRuA9aryByTHYrQLFz-HVQ3VVl7aAysxK15HMpqjkAIcC_R5vdfZt52hAXQNHoYhSuoSq_46_MT_tDBcLu49I.webp" alt="Product 2">
+                <h2>Mincraft</h2>
+                <p>Price: 30DT</p>
+                <button class="btn" onclick="addToCart('Mincraft', 30)">Add to Cart</button>
+        </div>
+            <div  id="imgeCard"  class="product">
+                <img src="images/EGS_GodofWar_SantaMonicaStudio_S2_1200x1600-fbdf3cbc2980749091d52751ffabb7b7_1200x1600-fbdf3cbc2980749091d52751ffabb7b7.jpeg" alt="Product 3">
+                <h2>God of War </h2>
+                <p>Price: 50DT</p>
+                <button class="btn" onclick="addToCart('God of War', 50)">Add to Cart</button>
+        </div>
+            <div class="product">
+                <img id='imgeCard' src="images/fifa-23-Eo-gbX.png" alt="Product 1">
+                <h2>Fifa 23</h2>
+                <p>Price: 60DT</p>
+                <button class="btn" onclick="addToCart('Fifa 23', 60)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img id='imgeCard' src="images/MV5BZGUzYTI3M2EtZmM0Yy00NGUyLWI4ODEtN2Q3ZGJlYzhhZjU3XkEyXkFqcGdeQXVyNTM0OTY1OQ@@._V1_.jpg" alt="Product 1">
+                <h2>The last of us</h2>
+                <p>Price: 7DT</p>
+                <button class="btn" onclick="addToCart('The last of us', 70)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img id='imgeCard' src="images/clean.jpg" alt="Product 1">
+                <h2>Spider-Man 2</h2>
+                <p>Price: 50DT</p>
+                <button class="btn" onclick="addToCart('Spider-Man 2', 50)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img id='imgeCard' src="images/RDR2PC1227_Epic Games_860x1148-860x1148-b4c2210ee0c3c3b843a8de399bfe7f5c.jpg" alt="Product 1">
+                <h2>Red Dead Redemption 2</h2>
+                <p>Price: 40DT</p>
+                <button class="btn" onclick="addToCart('Red Dead Redemption 2', 40)">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p><i>Gaming Shop</i></p>
+        <p><i>thanks for visit our shop </i></p>
+        <div class="social">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-dribbble"></i></a>
+        </div>
+        <p class="end"><i>desgined by Housem && Ahmed</i></p>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>
