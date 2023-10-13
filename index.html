@@ -5,76 +5,119 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <script src='https://code.jquery.com/jquery-2.2.4.js'></script>
     <script src="https://kit.fontawesome.com/92d70a2fd8.js" crossorigin="anonymous"></script>
-    <title>Document</title>
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/4489/4489774.png" type="image/x-icon">
+    <title>GAMING SHOP</title>
 </head>
 <body>
     <div class="main">
         <div class="header">
             <p class="logo">Gaming Shop</p>
-            <input type="text" placeholder="search" id="input">
-            <div>
-                <input type="text" id="input" placeholder="Enter Game title">
-                <button id="id1" onclick="searchGame()">Search</button>
+            <button id="button"> Logout</button>
+
+
+        </div>
+
+        <video autoplay loop muted src="images/EA SPORTS FC 24  Official Gameplay Trailer.mp4"></video>
+
+        <div>
+            <div class="cart">
+                <h2>My Cart</h2>
+                <ul id="cart-list">
+                </ul>
+                <p>Total: DT <span id="cart-total">0.00</span></p>
+                <button class="btn" onclick="checkout()">Checkout</button>
             </div>
-            <i style='font-size:24px' class='fas'>&#xf07a;</i>
-    </div>
-    <video src="images/EA_SPORTS_FC_24_Official_Gameplay_Trailer.mp4" autoplay loop muted></video>
+        </div>
+
         <div class="container">
-            <div id="imgeCard" class="product">
-                <img id='img' src="images/call-of-duty-modern-warfare-2-button-02-1653417394041.jpg" alt="Product 1">
-                <h2>Call of Duty</h2>
-                <p>Price: 80DT</p>
-                <button class="btn" onclick="addToCart('Call of Duty', 80)">Add to Cart</button>
-        </div>
-            <div  id="id1"  class="product">
-                <img id='imgeCard' src="images/11307uYG0CXzRuA9aryByTHYrQLFz-HVQ3VVl7aAysxK15HMpqjkAIcC_R5vdfZt52hAXQNHoYhSuoSq_46_MT_tDBcLu49I.webp" alt="Product 2">
-                <h2>Mincraft</h2>
-                <p>Price: 30DT</p>
-                <button class="btn" onclick="addToCart('Mincraft', 30)">Add to Cart</button>
-        </div>
-            <div  id="imgeCard"  class="product">
-                <img src="images/EGS_GodofWar_SantaMonicaStudio_S2_1200x1600-fbdf3cbc2980749091d52751ffabb7b7_1200x1600-fbdf3cbc2980749091d52751ffabb7b7.jpeg" alt="Product 3">
-                <h2>God of War </h2>
-                <p>Price: 50DT</p>
-                <button class="btn" onclick="addToCart('God of War', 50)">Add to Cart</button>
-        </div>
-            <div class="product">
-                <img id='imgeCard' src="images/fifa-23-Eo-gbX.png" alt="Product 1">
+            <div id="id1" class="product">
+                <img id="imageCard" src="images/call-of-duty-modern-warfare-2-button-02-1653417394041.jpg" alt="Product 1">
+                <h2>Call of Duty WR2</h2>
+                <p>Price: 100DT</p>
+                <button class="btn" onclick="addToCart('Call Of Duty WR2', 100)">Add to Cart</button>
+            </div>
+            <div  id="id1"class="product">
+                <img id="imageCard" src="images/fc24-1689029623566.jpg" alt="Product 2">
+                <h2>FC 24 </h2>
+                <p>Price: 150DT</p>
+                <button class="btn" onclick="addToCart('FC 24', 150)">Add to Cart</button>
+            </div>
+            <div  id="id1" class="product">
+                <img   id="imageCard" src="images/EGS_GodofWar_SantaMonicaStudio_S2_1200x1600-fbdf3cbc2980749091d52751ffabb7b7_1200x1600-fbdf3cbc2980749091d52751ffabb7b7.jpeg" alt="Product 3">
+                <h2>God Of War</h2>
+                <p>Price: 90DT</p>
+                <button class="btn" onclick="addToCart('God Of War',  90)">Add to Cart</button>
+            </div>
+            <div  id="id1"class="product">
+                <img id="imageCard" src="images/fifa-23-Eo-gbX.png" alt="Product 1">
                 <h2>Fifa 23</h2>
-                <p>Price: 60DT</p>
-                <button class="btn" onclick="addToCart('Fifa 23', 60)">Add to Cart</button>
+                <p>Price: 46DT</p>
+                <button class="btn" onclick="addToCart('Fifa 23', 46)">Add to Cart</button>
             </div>
             <div class="product">
-                <img id='imgeCard' src="images/MV5BZGUzYTI3M2EtZmM0Yy00NGUyLWI4ODEtN2Q3ZGJlYzhhZjU3XkEyXkFqcGdeQXVyNTM0OTY1OQ@@._V1_.jpg" alt="Product 1">
-                <h2>The last of us</h2>
-                <p>Price: 7DT</p>
-                <button class="btn" onclick="addToCart('The last of us', 70)">Add to Cart</button>
+                <img id="imageCard" src="images/MV5BZGUzYTI3M2EtZmM0Yy00NGUyLWI4ODEtN2Q3ZGJlYzhhZjU3XkEyXkFqcGdeQXVyNTM0OTY1OQ._V1_.jpg" alt="Product 1">
+                <h2>The Last Of US</h2>
+                <p>Price: 140DT</p>
+                <button class="btn" onclick="addToCart('The Last Of US',140)">Add to Cart</button>
             </div>
             <div class="product">
-                <img id='imgeCard' src="images/clean.jpg" alt="Product 1">
-                <h2>Spider-Man 2</h2>
-                <p>Price: 50DT</p>
-                <button class="btn" onclick="addToCart('Spider-Man 2', 50)">Add to Cart</button>
-            </div>
-            <div class="product">
-                <img id='imgeCard' src="images/RDR2PC1227_Epic Games_860x1148-860x1148-b4c2210ee0c3c3b843a8de399bfe7f5c.jpg" alt="Product 1">
+                <img id="imageCard" src="images/RDR2PC1227_Epic_Games_860x1148-860x1148-b4c2210ee0c3c3b843a8de399bfe7f5c.jpg" alt="Product 1">
                 <h2>Red Dead Redemption 2</h2>
                 <p>Price: 40DT</p>
                 <button class="btn" onclick="addToCart('Red Dead Redemption 2', 40)">Add to Cart</button>
             </div>
+            <div class="product">
+                <img id="imageCard" src="images/Untitled.jpeg" alt="Product 1">
+                <h2>Forza Horizon 5</h2>
+                <p>Price: 60DT</p>
+                <button class="btn" onclick="addToCart('Forza Horizon 5', 60)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img id="imageCard" src="images/hitman-3-button-2020-v1-1599867593904.jpg" alt="Product 1">
+                <h2>Hitman 3</h2>
+                <p>Price: 30DT</p>
+                <button class="btn" onclick="addToCart('Hitman 3', 30)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img id="imageCard" src="images/EGS_PAYDAY3_Starbreeze_S2_1200x1600-80e39c5ee902cba196b484464276c8b7.jpg" alt="Product 1">
+                <h2>PayDay 3</h2>
+                <p>Price: 70DT</p>
+                <button class="btn" onclick="addToCart('PayDay 3', 70)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img id="imageCard" src="images/Dying_Light_2_cover_art.jpg" alt="Product 1">
+                <h2>Dying Light 2</h2>
+                <p>Price: 55DT</p>
+                <button class="btn" onclick="addToCart('Dying Light 2', 55)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img id="imageCard" src="images/Mortal_Kombat_11_cover_art.png" alt="Product 1">
+                <h2>Mortal Kombat 11</h2>
+                <p>Price: 76DT</p>
+                <button class="btn" onclick="addToCart('Mortal Kombat 11', 76)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img id="imageCard" src="images/download.jpg" alt="Product 1">
+                <h2>Spider Man</h2>
+                <p>Price: 50DT</p>
+                <button class="btn" onclick="addToCart('Spider Man  ', 50)">Add to Cart</button>
+            </div>
+
         </div>
+
     </div>
+
+    
     <footer>
         <p><i>Gaming Shop</i></p>
-        <p><i>thanks for visit our shop </i></p>
+        <p>thanks for visit our shop</p>
         <div class="social">
             <a href="#"><i class="fab fa-facebook-f"></i></a>
             <a href="#"><i class="fab fa-instagram"></i></a>
             <a href="#"><i class="fab fa-dribbble"></i></a>
         </div>
-        <p class="end"><i>desgined by Housem && Ahmed</i></p>
+        <p class="end"><i>desgined by Housem & Ahmed</i></p>
     </footer>
     <script src="index.js"></script>
 </body>
